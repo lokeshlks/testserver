@@ -66,8 +66,13 @@ function getFormattedTime() {
 
 }
 
-app.get('/getData', cors(corsOptions), async (req, res) => {
 
+app.get('/', cors(corsOptions), async (req, res) => {
+  res.send('Hello World!')
+})
+
+
+app.get('/getData', cors(corsOptions), async (req, res) => {
 
  var txid = getTimeStamp();
       var x = Math.random() * 1000000;      
@@ -76,7 +81,7 @@ app.get('/getData', cors(corsOptions), async (req, res) => {
 
  let currentDate = getFormattedTime();         
 
-let UPInterfaceURL = 'https://precision.epayworldwide.com/up-interface/'
+ let UPInterfaceURL = 'https://precision.epayworldwide.com/up-interface/'
       let userIdHost = 'UPTest_93889311'
       let userPaswdHost = '028eb6be0b280853';
       console.log('user cred..' + userIdHost + userPaswdHost);
