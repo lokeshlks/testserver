@@ -4,7 +4,8 @@
   "description": "this is catalog server",
   "main": "catalog.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node catalog"
   },
   "author": "Lokesh",
   "license": "ISC",

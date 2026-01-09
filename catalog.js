@@ -8,7 +8,7 @@ app.use(cors());
 
 const corsOptions = {
   //origin: ['https://' + DOMAIN_2, 'https://' + DOMAIN_3, 'https://' + DOMAIN_1, 'https://' + DOMAIN_0]
-  origin: "https://*.myshopify.com"
+  origin: "https://epay-store-2-2.myshopify.com"
 //  origin: ['https://localhost']
 };
 
